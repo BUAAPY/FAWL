@@ -17,7 +17,7 @@ max_ctx_l=64 #64
 num_gauss_center=16 #16
 
 exp_id=fawl
-device_ids=1
+device_ids=0
 warmup_epoch=7
 alpha4=1
 alpha5=1

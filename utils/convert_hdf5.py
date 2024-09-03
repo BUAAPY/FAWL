@@ -86,6 +86,7 @@ def convert(visual_feat, video2frames, save_name="activitynet_i3d.hdf5"):
 
 
 if __name__ == "__main__":
+    # replace paths below according to downloaded ms-sl files
     visual_feats = BigFile("activitynet/FeatureData/i3d")
     video2frames = read_dict("activitynet/FeatureData/i3d/video2frames.txt")
 
