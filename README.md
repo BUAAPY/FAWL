@@ -55,7 +55,7 @@ bash scripts/train_activitynet.sh
 # The model is placed in the directory data/$collection/results/VCMR/$ckpt_name after training
 
 ## Inference
-# set model_dir to the checkpoint direction in scripts/test.sh correctly
+# set model_dir to the checkpoint directory in scripts/test.sh correctly
 bash scripts/test.sh
 ```
 
