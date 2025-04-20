@@ -4,7 +4,7 @@ PyTorch implementation of paper:
 
 FAWL: Weakly-Supervised Video Corpus Moment Retrieval with Frame-Wise Auxiliary Alignment and Weighted Contrastive Learning
 
-> The codes are modified from [Code-JSG](https://https://github.com/CFM-MSG/Code_JSG)
+> The codes are modified from [Code-JSG](https://github.com/CFM-MSG/Code_JSG)
 
 
 # Environment Setup
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 # Data Preparation
 
-* For Charades-STA, follow [Code-JSG](https://https://github.com/CFM-MSG/Code_JSG) to prepare all features and annotations.
+* For Charades-STA, follow [Code-JSG](https://github.com/CFM-MSG/Code_JSG) to prepare all features and annotations.
 * For ActivityNet-Captions, follow [MS-SL](https://github.com/HuiGuanLab/ms-sl) to prepare required features. 
   * Use the script `utils/convert_hdf5.py` to convert downloaded features to `activitynet_i3d.hdf5` file. Make sure to replace paths in the script correctly according to downloaded ms-sl files.
   * We provide converted annotations in `data/activitynet/TextData`.
