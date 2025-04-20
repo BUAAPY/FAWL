@@ -10,10 +10,12 @@ FAWL: Weakly-Supervised Video Corpus Moment Retrieval with Frame-Wise Auxiliary 
 # Environment Setup
 
 ```bash
-conda create -n fawl
+conda create -n fawl python==3.10.13
 conda activate fawl
 pip install -r requirements.txt
 ```
+
+(CUDA>=12.1)
 
 # Data Preparation
 
