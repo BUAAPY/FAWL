@@ -38,7 +38,18 @@ class SetCriterion(nn.Module):
         for i, (l, r) in enumerate(zip(left, right)):
             target_scores[i][l:r+1] = 1. 
 
+        ### This may trigger CUDA ERRORS in some environments
         saliency_loss = F.binary_cross_entropy(saliency_scores, target_scores)
+
+        ### You can use following codes instead. However, the final performance may be different.
+        # target_pos_mask = (target_scores==1.0)
+        # target_neg_mask = ~target_pos_mask
+
+        # pos_score_logits = torch.log(saliency_scores[target_pos_mask])
+        # neg_score_logits = torch.log(1.0-saliency_scores[target_neg_mask])
+
+        # saliency_loss = - (pos_score_logits.sum()+neg_score_logits.sum()) / saliency_scores.numel() 
+
         loss_dict["saliency_loss"] = saliency_loss
         return saliency_loss
 
